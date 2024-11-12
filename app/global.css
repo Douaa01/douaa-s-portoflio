@@ -1,0 +1,9 @@
+/* styles/global.css */
+
+.container {
+    width: 100%; /* Utilisez un pourcentage pour rendre l'élément adaptable */
+    max-width: 1200px; /* Utilisez une largeur maximale si nécessaire */
+    margin: 0 auto; /* Centrer horizontalement la div container */
+    padding: 1rem; /* Optionnel : ajoutez du padding pour espacer le contenu */
+  }
+  
