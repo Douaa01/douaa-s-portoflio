@@ -1,11 +1,10 @@
-import "../global.css";
+import "../global.css"; // Importation des styles globaux
 import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://chronark.com"), 
   title: {
     default: "Douaa's Portfolio",
     template: "%s | chronark.com",
@@ -13,8 +12,7 @@ export const metadata: Metadata = {
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
     title: "chronark.com",
-    description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
+    description: "Co-founder of unkey.dev and founder of planetfall.io",
     url: "https://chronark.com",
     siteName: "chronark.com",
     images: [
@@ -46,6 +44,7 @@ export const metadata: Metadata = {
     shortcut: "/icon.png",
   },
 };
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -64,11 +63,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
       <head>
+        {/* Ajout de la balise meta pour le viewport */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Analytics />
       </head>
       <body
-        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
+        className={`bg-black ${
+          process.env.NODE_ENV === "development" ? "debug-screens" : ""
+        }`}
       >
         {children}
       </body>
