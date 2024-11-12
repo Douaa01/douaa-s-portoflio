@@ -1,4 +1,97 @@
-import Link from "next/link";
+// pages/projects.js
+import React from 'react';
+import { Navigation } from "../components/nav";
+import { Facebook, Instagram } from "lucide-react";
+
+export default function Projects() {
+    const projects = [
+        {
+            id: 1,
+            title: 'E-commerce Web Application Development',
+            date: 'September, 2024',
+            description: 'I developed an e-commerce web application that provides a seamless user experience with interactive pages for browsing products, placing orders, and managing user accounts. An admin interface streamlines inventory and order management, ensuring efficient tracking and ease of use.',
+            
+        },
+        {
+            id: 2,
+            title: 'Instant Website Creation Application',
+            date: 'June, 2024',
+            description: 'I collaborated with a team to create an instant website builder that allows users to design websites effortlessly using customizable templates and a drag-and-drop interface. Our work included user management and efficient content handling, providing easy options for adding, saving, and retrieving text, images, and videos.',
+            
+        },
+        {
+            id: 3,
+            title: 'Animal Geolocation Application, IoT Project',
+            date: 'March, 2024',
+            description: 'I developed an IoT-based animal geolocation application that includes an interface for viewing animals in real-time, accessible through login. The project involved integrating geolocation devices using Arduino, GPS, and LoRa modules. It also features pages for login, registration, and animal management with complete CRUD capabilities.',
+            
+        },
+        {
+          id: 4,
+          title: 'Brain tumor detectio',
+          date: 'April, 2024',
+          description: 'I developed a brain tumor detection system, involving data preparation, model building, and evaluation. The project included importing and preprocessing medical data, building and training a detection model, and evaluating its performance using metrics like accuracy, loss curves, and a confusion matrix',
+          
+      },
+      {
+        id: 5,
+        title: 'Stock Management, Full-Stack Web Development',
+        date: 'August, 2023',
+        description: 'I developed a full-stack web application for stock management, featuring a user-friendly interface and a backend for efficient data handling. The project included seamless integration between the frontend and backend, utilizing a REST API for data management and a local server setup for testing and development.',
+        
+    },
+    ];
+
+    return (
+        <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 min-h-screen">
+            <Navigation />
+            <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+                <div className="flex flex-col items-center justify-center w-full p-8 text-white">
+                    <h1 className="text-5xl font-bold mb-4 mt-16">Projects</h1>
+                    <p className="text-lg max-w-2xl text-center mb-16">
+                        Some of the projects are from work and some are on my own time.
+                    </p>
+
+                    <div className="grid md:grid-cols-2 gap-8 mb-16">
+                        {projects.map((project) => (
+                            <div key={project.id} className="bg-zinc-800 p-6 rounded-lg shadow-lg">
+                                <p className="text-sm text-zinc-400">{project.date}</p>
+                                <h2 className="text-2xl font-bold mt-2">{project.title}</h2>
+                                <p className="mt-4">{project.description}</p>
+                                <div className="flex justify-between items-center mt-4">
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Section "Get in Touch" */}
+                    <h1 className="text-4xl font-bold mb-4">Get in Touch</h1>
+                    <p className="text-lg max-w-2xl text-center mb-4">
+                        I'm always open to new opportunities and collaborations, so feel free to reach out to me.
+                    </p>
+                    <a href="mailto:ataallahdouaa@gmail.com" className="bg-white text-black px-6 py-3 rounded-full font-bold mb-8 inline-block">
+                        Contact me ✉️
+                    </a>
+
+                    <p className="text-lg max-w-2xl text-center mb-8">
+                        If you're interested in checking out my other socials, you can find them here:
+                    </p>
+                    <div className="flex space-x-6">
+                        <a href="https://www.facebook.com/douaa.ataallah/" target="_blank" rel="noopener noreferrer" className="text-white text-2xl">
+                            <Facebook />
+                        </a>
+                        <a href="https://www.instagram.com/___douaa/" target="_blank" rel="noopener noreferrer" className="text-white text-2xl">
+                            <Instagram />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+
+/* import Link from "next/link";
 import React from "react";
 import { allProjects } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
@@ -135,4 +228,4 @@ export default async function ProjectsPage() {
       </div>
     </div>
   );
-}
+}*/
