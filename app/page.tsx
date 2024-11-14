@@ -72,7 +72,7 @@ export default function Home() {
         {/* Personal Introduction */}
         <div className="mt-6 flex items-center justify-center text-center animate-fade-in">
           <h2 className="text-xl text-zinc-400 p-4 max-w-3xl">
-            I'm a final-year computer engineering student from Tunisia with a passion for web development, IoT, and entrepreneurship. I enjoy learning new technologies and applying them to solve real-world problems. I'm eager to contribute to exciting projects, work with motivated teams, and create impactful solutions that make a difference.
+            I'm a final-year computer engineering student from Tunisia with a passion for web development, IoT, and robotics. I enjoy learning new technologies and applying them to solve real-world problems. I'm eager to contribute to exciting projects, work with motivated teams, and create impactful solutions that make a difference.
           </h2>
         </div>
       </div>
