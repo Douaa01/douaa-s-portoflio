@@ -28,7 +28,7 @@ export default function Projects() {
         },
         {
           id: 4,
-          title: 'Brain tumor detection',
+          title: 'Brain tumor detection ',
           date: 'April, 2024',
           description: 'I developed a brain tumor detection system, involving data preparation, model building, and evaluation. The project included importing and preprocessing medical data, building and training a detection model, and evaluating its performance using metrics like accuracy, loss curves, and a confusion matrix',
           
