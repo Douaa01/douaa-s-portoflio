@@ -22,12 +22,12 @@ export default function Home() {
 
         {/* Navigation */}
         <nav className="my-16 animate-fade-in">
-          <ul className="flex items-center justify-center gap-8"> {/* Augmenter gap pour plus d'espace entre les liens */}
+          <ul className="flex items-center justify-center gap-10"> {/* Augmenter gap pour plus d'espace entre les liens */}
             {navigation.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-lg duration-500 text-zinc-500 hover:text-zinc-300" // text-lg ou text-xl pour augmenter la taille du texte
+                  className="text-xl duration-500 text-zinc-500 hover:text-zinc-300 " // text-lg ou text-xl pour augmenter la taille du texte
                 >
                   {item.name}
                 </Link>
