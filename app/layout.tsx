@@ -7,17 +7,17 @@ import { Analytics } from "./components/analytics";
 export const metadata: Metadata = {
   title: {
     default: "Douaa's Portfolio",
-    template: "%s | chronark.com",
+    template: "%s | Douaa's Portfolio",
   },
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
-    title: "chronark.com",
+    title: "Douaa's Portfolio",
     description: "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+    url: "/image00001 (1).jpg",
+    siteName: "Douaa's Portfolio",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "/image00001 (1).jpg",
         width: 1920,
         height: 1080,
       },
