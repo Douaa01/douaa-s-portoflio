@@ -34,7 +34,7 @@ export default function Home() {
               </li>
             ))}
           </ul>
-        </nav>
+        </nav> 
 
 
         {/* Image */}
