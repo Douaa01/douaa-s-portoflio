@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import Head from "next/head";
 import Particles from "./components/particles";
+import { Linkedin, Mail, Github } from "lucide-react";
+
 
 const navigation = [
   { name: "About", href: "/about" },
@@ -34,7 +36,7 @@ export default function Home() {
               </li>
             ))}
           </ul>
-        </nav> 
+        </nav>
 
 
         {/* Image */}
@@ -67,6 +69,18 @@ export default function Home() {
           <h3 className="text-sm text-zinc-500">
             Passionate about <strong className="text-white">web development, robotics</strong>, and <strong className="text-white">AI</strong>.
           </h3>
+        </div>
+        <br></br>
+        <div className="mt-6 flex items-center justify-center text-center animate-fade-in space-x-6">
+          <a href="https://www.linkedin.com/in/douaa-atallah/" target="_blank" rel="noopener noreferrer" className="text-white text-2xl">
+            <Linkedin />
+          </a>
+          <a href="mailto:ataallahdouaa@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white text-2xl">
+            <Mail />
+          </a>
+          <a href="https://github.com/Douaa01" target="_blank" rel="noopener noreferrer" className="text-white text-2xl">
+            <Github />
+          </a>
         </div>
 
         {/* Personal Introduction */}
