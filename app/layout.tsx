@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Douaa's Portfolio",
     description: "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "/image00001 (1).jpg",
+    url: "https://oceanwp.org/wp-content/uploads/2017/07/portfolio-image.png",
     siteName: "Douaa's Portfolio",
     images: [
       {
-        url: "/image00001 (1).jpg",
+        url: "https://oceanwp.org/wp-content/uploads/2017/07/portfolio-image.png",
         width: 1920,
         height: 1080,
       },

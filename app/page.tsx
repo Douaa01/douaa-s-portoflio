@@ -42,10 +42,10 @@ export default function Home() {
         {/* Image */}
         <div style={{ textAlign: 'center' }} className="animate-fade-in">
           <img
-            src="/image00001 (1).jpeg"
+            src="/image.jpeg"
             alt="Description de l'image"
-            width="300"
-            height="250"
+            width="400"
+            height="350"
             className="rounded-md" // Example of Tailwind utility classes
           />
         </div>
