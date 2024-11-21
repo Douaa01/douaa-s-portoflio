@@ -42,7 +42,7 @@ export default function Home() {
         {/* Image */}
         <div style={{ textAlign: 'center' }} className="animate-fade-in">
           <img
-            src="/image.jpeg"
+            src="/image2.jpeg"
             alt="Description de l'image"
             width="400"
             height="350"
