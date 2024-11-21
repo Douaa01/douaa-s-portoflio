@@ -52,7 +52,7 @@ export default function About() {
                         <li>
                             Planning my week ahead to stay organized and ensure I make the most of my time, including setting goals, managing priorities, and scheduling both work and leisure activities.            </li>
                         <li>
-                            - Creating content for my Instagram and sharing it primarily in stories to connect with my audience and express my creativity, check out my <a href="https://www.instagram.com/___douaa/" className="text-blue-500 underline">Instagram</a> if you're interested.
+                            Creating content for my Instagram and sharing it primarily in stories to connect with my audience and express my creativity, check out my <a href="https://www.instagram.com/___douaa/" className="text-blue-500 underline">Instagram</a> if you're interested.
                         </li>
                     </ul>
 
